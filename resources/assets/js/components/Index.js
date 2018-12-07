@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 /* An example React component */
-class Main extends Component {
+class Index extends Component {
     render() {
         return (
             <div>
@@ -12,11 +12,11 @@ class Main extends Component {
     }
 }
 
-export default Main;
+export default Index;
 
 /* The if statement is required so as to Render the component on pages that have a div with an ID of "root";
 */
 
 if (document.getElementById('root')) {
-    ReactDOM.render(<Main />, document.getElementById('root'));
-  }
+    ReactDOM.render(<Index />, document.getElementById('root'));
+}
