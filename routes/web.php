@@ -14,7 +14,7 @@
 // Auth::routes();
 /* CoreUI templates */
 
-Route::view('/','welcome');
+Route::view('/','root');
 
 // Route::middleware('auth')->group(function() {
 // 	Route::view('/', 'panel.blank');

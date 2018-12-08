@@ -5,17 +5,33 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable
+class Usuario extends Authenticatable
 {
     use Notifiable;
+
+    /**
+     * Tabla que contiene los usuarios
+     *
+     * @var sting
+     */
+
+    protected $table = 'pad_usuarios';
+
+    /**
+     * Atritubo llave primaria
+     *
+     * @var string
+     */
+    protected $primarykey = 'usu_num';
 
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
+
     protected $fillable = [
-        'name', 'email', 'password',
+        'usu_nom','usu_pat','usu_mat', 'usu_email', 'usu_password',
     ];
 
     /**
@@ -24,6 +40,6 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'usu_password', 'remember_token',
     ];
 }
