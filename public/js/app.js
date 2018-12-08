@@ -15548,7 +15548,7 @@ module.exports = __webpack_require__(94);
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Index__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Index__ = __webpack_require__(39);
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -37823,13 +37823,6 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 /* App page importations*/
-
-
-/* App Importations */
-
-
-
-/* An Index component */
 
 var Index = function (_Component) {
     _inherits(Index, _Component);
