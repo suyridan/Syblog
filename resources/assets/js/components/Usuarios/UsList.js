@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
-
 import {BrowserRouter as Router, Link, Route} from 'react-router-dom';
 
 export default class UsList extends Component{
 
   render() {
     return (
-      <div>
-        <div>
+      <div className="row">
+        <div className="col-12">
           <table className="table table-striped table-hover">
             <thead>
               <th>Numero</th>
@@ -38,17 +37,6 @@ export default class UsList extends Component{
           </table>
         </div>
       </div>
-
-          // <Router>
-          //   <div>
-          //     <Link to="/usuarios">Lista de usuarios</Link>
-          //     <Link to="/Usuarios/create">Crear usuario</Link>
-          //     <Route exact path="/Usuarios" component={UsList}
-          //     <Route exact path="/Usuarios/create" component={UsCreate}
-          //   </div>
-          // </Router>
-
-
     );
   }
 }

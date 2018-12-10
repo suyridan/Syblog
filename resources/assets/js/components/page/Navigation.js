@@ -8,16 +8,25 @@ export default class Navigation extends Component{
 
   render() {
     return (
-      <div>
-        <Router>
-          <div>
-            <Link to="/usuarios">Lista de usuarios</Link>
-            <Link to="/Usuarios/create">Crear usuario</Link>
-            <Route exact path="/Usuarios" component={UsList}/>
-            <Route exact path="/Usuarios/create" component={UsCreate}/>
+      <Router>
+        <div>
+          <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a className="navbar-brand" href="#">Logo</a>
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link to="/usuarios" className="nav-link">Listado de usuarios</Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/usuarios/create" className="nav-link">Usuario Nuevo</Link>
+              </li>
+            </ul>
+          </nav>
+          <div className="container">
+            <Route exact path="/usuarios" component={UsList}/>
+            <Route exact path="/usuarios/create" component={UsCreate}/>
           </div>
-        </Router>
-      </div>
+        </div>
+      </Router>
     );
   }
 }
