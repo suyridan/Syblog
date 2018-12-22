@@ -14,4 +14,4 @@ require('./bootstrap');
  */
 
  /* Import the Main component */
- import Index from './components/Index';
+ import Index from './Index';
