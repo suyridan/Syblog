@@ -1,11 +1,14 @@
+//Dependencies
 import React, { Component } from 'react';
 
-class Home extends Component {
+class Page404 extends Component {
     render() {
-        <div className="Home" >
-            <h1> Home Page </h1>
-        </div>
+        return(
+            <div className="Page404" >
+                <h1> Page404 Page </h1>
+            </div>
+        );
     }
 }
 
-export default Home;
+export default Page404;

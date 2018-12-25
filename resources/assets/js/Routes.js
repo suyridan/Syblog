@@ -7,16 +7,16 @@ import App from './components/App';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
-import UsList from './components/Usuarios';
+import Usuarios from './components/Usuarios';
 import Page404 from './components/Page404';
 
 const AppRoutes = () =>
     <App>
         <Switch>
-            <Route path="/s" component={Home}/>
+            <Route path="/" exact component={Home}/>
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
-            <Route path="/usuario" component={UsList} />
+            <Route path="/usuarios" component={Usuarios} />
             <Route component={Page404} />
         </Switch>
     </App>;

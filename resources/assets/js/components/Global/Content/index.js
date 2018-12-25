@@ -1,3 +1,4 @@
+//Dependencies
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
@@ -5,13 +6,13 @@ class Content extends Component {
     static propTypes : {
         body: PropTypes.object.isRequired
     };
-
+q
     render() {
         
         const { body } = this.props;
 
         return(
-        <div className = "Content" >
+        <div className = "Content">
             {body}
         </div>
         );
